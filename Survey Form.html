@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Survey Form</legend>
+
+    <form action="Survey_Form.html" method="post">
+        <label for="Rating">Rating:</label>
+        <input type="number" id="Rating" name="Rating" min="1" max="10"><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="datalist">Choose a city:</label>
+        <input list="cities" id="datalist" name="datalist">
+        <datalist id="cities">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            <option value="Houston">
+            <option value="Phoenix">
+            <option value="Philadelphia">
+            <option value="San Antonio">
+            <option value="San Diego" hidden>
+            <option value="Dallas" disabled>
+        </datalist><br>
+        
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color">
+            <optgroup label="Primary Colors">
+                <option value="red">Red</option>
+                <option value="green" >Green</option>
+                <option value="blue" disabled>Blue</option>
+            </optgroup>
+             <optgroup label="Secondary Colors">
+                <option value="orange"hidden>Orange</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+            </optgroup>
+        </select><br>
+        
+        <label for="submit">Submit</label>
+        <input type="submit" id="submit" name="submit">
+
+        <label for="reset">Reset</label>
+        <input type="reset" id="reset" name="reset">
+    </form>
+    </fieldset>
+</body>
+</html>
