@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            position: relative;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 1100%;
+            object-fit: cover;
+        }
+        h1 {
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            position: relative;
+            z-index: 1;
+        }
+        label {
+            position: relative;
+            z-index: 1;
+        }
+        select {
+            position: relative;
+            z-index: 1;
+        }
+        audio {
+            position: relative;
+            z-index: 1;
+        }
+        embed {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <video src="Asset\mov_bbb.mp4" autoplay muted></video>
+    <h1>demo Section</h1>
+    <p>demo paragraph</p>
+    <label for="Product">Select Product</label>
+    <select name="Product" id="Product">
+        <option value="Product 1">Product 1</option>
+        <option value="Product 2">Product 2</option>
+        <option value="Product 3">Product 3</option>
+    </select>
+    <audio controls>
+  <source src="Asset\WhatsApp Audio 2026-04-17 at 2.48.15 PM.mp4" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>    
+<embed src="Asset\WhatsApp Audio 2026-04-17 at 2.48.15 PM.mp4">
+</header>
+
+</body>
+</html>
