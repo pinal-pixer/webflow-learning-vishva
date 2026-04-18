@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Lookup</title>
+    <script>
+function showDetails(animal) {
+  let animalType = animal.getAttribute("data-animal-type");
+  alert("The " + animal.innerHTML + " is a " + animalType + ".");
+}
+</script>
+</head>
+<body>
+  <h1>Tag Lookup</h1>
+    <p> a tag support the all attributes like href, src, rel, target</p>
+    <a href="https://www.google.com">Google</a>
+    <a src="image.jpg">image</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a rel="Basic.css">Basic.css</a>
+  <h1>details</h1>
+    <p> details tag is used to provide additional details about an element</p>
+      <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+<h1>mark</h1>
+  <p>mark tag is used to highlight text</p>
+  <p>Do not forget to buy <mark>milk</mark> today.</p>
+  <label for="file">Downloading progress:</label>
+  <progress id="file" value="32" max="100"> 32% </progress>
+<h1>meter</h1>
+  <p>meter tag is used to display a gauge</p>
+  <meter value="3" min="0" max="10">3 out of 10</meter>
+<h1>abbr</h1>
+  <p>abbr tag is used to define an abbreviation it also show the full form when you hover over it</p>
+  <abbr title="hello World">H   W</abbr>
+
+<h1>deprecated/obsolete tags</h1>
+  <p>deprecated/obsolete tags is not supported in html5</p>
+  <p>like <tt></tt> <big></big> <strike></strike><center></center> <font></font> </p>
+
+<h1>data-* attributes</h1>
+  <p>data-* attributes are used to give extra information to elements</p>
+  <h3 style="margin-top: 20px;">Species</h3>
+  <p>Click on a species to see what type it is:</p>
+
+<ul>
+  <li onclick="showDetails(this)" id="owl" data-animal-type="bird">Owl</li>
+  <li onclick="showDetails(this)" id="salmon" data-animal-type="fish">Salmon</li>  
+  <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider">Tarantula</li>  
+</ul>
+
+<table style="border-collapse: collapse;" border="1">
+  <tr>
+    <th>Entity Name</th>
+    <th>Entity Number</th>
+    <th>Rendered Output</th>
+  </tr>
+  <tr>
+    <td>&amp; and</td>
+    <td>&amp;#38;</td>
+    <td>&</td>
+  </tr>
+  <tr>
+    <td>&quot; double quote</td>
+    <td>&amp;#34;</td>
+    <td>"</td>
+  </tr>
+  <tr>
+    <td>&apos; single quote</td>
+    <td>&amp;#39;</td>
+    <td>'</td>
+  </tr>
+  <tr>
+    <td>&lt; less than</td>
+    <td>&amp;#60;</td>
+    <td><</td>
+  </tr>
+  <tr>
+    <td>&gt; greater than</td>
+    <td>&amp;#62;</td>
+    <td>></td>
+  </tr>
+  <tr>
+    <td>&copy; copyright</td>
+    <td>&amp;#169;</td>
+    <td>©</td>
+  </tr>
+  <tr>
+    <td>&reg; registered trademark</td>
+    <td>&amp;#174;</td>
+    <td>&reg;</td>
+  </tr>
+  <tr>
+    <td>&amp; trademark</td>
+    <td>&amp;#8482;</td>
+    <td>&trade;</td>
+  </tr>
+  <tr>
+    <td>o&#770 O(cap) </td>
+    <td>&amp;#770;</td> 
+    <td>&#770;</td>
+  </tr>
+  <tr>
+    <td>&dollar; dollar sign</td>
+    <td>&amp;#36;</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>&rupee; rupee sign</td>
+    <td>&amp;#8377;</td>
+    <td>₹</td>
+  </tr>
+  <tr>
+    <td>&euro; euro sign</td>
+    <td>&amp;#8364;</td>
+    <td>€</td>
+  </tr>
+  <tr>
+    <td>&deg; degree sign</td>
+    <td>&amp;#176;</td>
+    <td>°</td>
+  </tr>
+  <tr>
+    <td>non-breaking space</td>
+    <td>&amp;#160;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>yen</td>
+    <td>&amp;#165;</td>
+    <td>¥</td>
+  </tr>
+  <tr>
+    <td>cent</td>
+    <td>&amp;#162;</td>
+    <td>¢</td>
+  </tr>
+  <tr>
+    <td>paragraph</td>
+    <td>&amp;#182;</td>
+    <td>¶</td>
+  </tr>
+</table>
+</body>
+</html>
