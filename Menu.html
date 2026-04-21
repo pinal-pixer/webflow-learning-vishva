@@ -4,141 +4,310 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f0ea;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #8b3e00;
+    color: #DE9F3A;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #DE9F3A;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background: #efe6dc;
+    
+}
+
+/* Titles */
+h2 {
+    text-align: center;
+    color: #8b3e00;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.section-title {
+    font-family: 'Georgia Pro', Georgia, serif;
+    border-radius: 12px;
+    color: #8b3e00;
+    margin-left: 390px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+/* Table */
+table {
+    border-radius: 12px;
+    width: 1024px;
+    height: 240px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+   
+    background-color: #a35215;
+    color: white;
+}
+
+th, td {
+    
+    padding: 10px;
+    font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f3ee;
+}
+
+/* Tags */
+.tag {
+    padding: 3px 6px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+.veg {
+    background-color: #d4edda;
+    color: green;
+}
+
+.nonveg {
+    background-color: #f8d7da;
+    color: red;
+}
+
+/* Image */
+.menu-img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #8b3e00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+</style>
 </head>
 <body>
-    <h1>The Spice Garden</h1>
-    <a href="home.html">Home</a> | <a href="Menu.html">Menu</a> | <a href="Contact_Form.html">Contact</a> | <a href="About_me.html#about">About</a>
-    <h2>Our Menu</h2>
-    <p>All dishes are prepared fresh to order. Prices are in INR.</p>
-    <h3>Starters</h3>
-    <table style="border-collapse: collapse;" border="1">
-        <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Type</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Samosa (2 pcs)</td>
-            <td>Crispy pastry filled with spiced potatoes and peas</td>
-            <td>Veg</td>
-            <td>&rupee; 120</td>
-        </tr>
-        <tr>
-            <td>Paneer Tikka</td>
-            <td>Marinated cottage cheese grilled in a tandoor oven</td>
-            <td>Veg</td>
-            <td>&rupee; 280</td>
-        </tr>
-        <tr>
-            <td>Chicken 65</td>
-            <td>Spicy deep-fried chicken bites with curry leaves</td>
-            <td>Non-Veg</td>
-            <td>&rupee; 320</td>
-        </tr>
-        <tr>
-            <td>Fish Amritsari</td>
-            <td>Battered and fried fish fillets with mint chutney</td>
-            <td>Non-Veg</td>
-            <td>&rupee; 350</td>
-        </tr>
-    </table>
-    <h3>Main Courses</h3>
-    <table style="border-collapse: collapse;" border="1">
-       <tr>
-           <th>Dish</th>
-           <th>Description</th>
-           <th>Type</th>
-           <th>Price</th>
-       </tr>
-       <tr>
-           <td>Butter Chicken</td>
-           <td>Tender chicken in a rich, creamy tomato-based gravy</td>
-           <td>Non-Veg</td>
-           <td>&rupee; 380</td>
-       </tr>
-       <tr>
-           <td>Dal Makhani</td>
-           <td>Slow-cooked black lentils simmered with butter and cream</td>
-           <td>Veg</td>
-           <td>&rupee; 260</td>
-       </tr>
-       <tr>
-           <td>Palak Paneer</td>
-           <td>Cottage cheese cubes in a smooth spinach gravy</td>
-           <td>Veg</td>
-           <td>&rupee; 280</td>
-       </tr>
-       <tr>
-           <td>Biryani (Chicken)</td>
-           <td>Fragrant basmati rice layered with spiced chicken</td>
-           <td>Non-Veg</td>
-           <td>&rupee; 360</td>
-       </tr>
-       <tr>
-           <td>Chole Bhature</td>
-           <td>Spiced chickpea curry with fluffy fried bread</td>
-           <td>Veg</td>
-           <td>&rupee; 220</td>
-       </tr>
 
+<header>
+    <h3>The Spice Garden</h3>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Contact.html">Contact</a>
+        
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2>Our Menu</h2>
+    <p class="subtitle">All dishes are prepared fresh to order. Prices are in INR.</p>
+    
+
+    <!-- Starters -->
+    <div class="section-title"><h1>Starters</h1></div>
+    <table style="border-radius: 12px;">
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samosa</td>
+                <td>Crispy pastry filled with spiced potatoes and peas</td>
+                <td><span class="tag veg">Veg</span></td>
+                <td>₹120</td>
+            </tr>
+            <tr>
+                <td>Paneer Tikka</td>
+                <td>Marinated cottage cheese grilled in a tandoor oven</td>
+                <td><span class="tag veg">Veg</span></td>
+                <td>₹250</td>
+            </tr>
+            <tr>
+                <td>Chicken Tikka</td>
+                <td>Marinated chicken grilled in a tandoor oven</td>
+                <td><span class="tag nonveg">Non-Veg</span></td>
+                <td>₹300</td>
+            </tr>
+            <tr>
+                <td>Fish Amritsari</td>
+                <td>Battered and fried fish fillets with mint chutney</td>
+                <td><span class="tag nonveg">Non-Veg</span></td>
+                <td>₹350</td>
+            </tr>
+        </tbody>
     </table>
-    <h3>Breads & Rice</h3>
-    <table style="border-collapse: collapse;" border="1">
-        <tr>
-            <th>Item</th>
-            <th>Description</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Butter Naan</td>
-            <td>Soft leavened bread brushed with butter</td>
-            <td>&rupee; 60</td>
-        </tr>
-        <tr>
-            <td>Garlic Naan</td>
-            <td>Naan topped with garlic and fresh coriander</td>
-            <td>&rupee; 80</td>
-        </tr>
-        <tr>
-            <td>Steamed Rice</td>
-            <td>Fluffy basmati rice</td>
-            <td>&rupee; 100</td>
-        </tr>
-        <tr>
-            <td>Jeera Rice</td>
-            <td>Basmati rice tempered with cumin seed</td>
-            <td>&rupee; 130</td>
-        </tr>
+
+    <!-- Main Course -->
+    <div class="section-title"><h1>Main Course</h1></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Butter Chicken</td>
+                <td>Tender chicken in a rich, creamy tomato- based gravy</td>
+                <td><span class="tag nonveg">Non-Veg</span></td>
+                <td>₹350</td>
+            </tr>
+            <tr>
+                <td>Dal Makhani</td>
+                <td>Slow-cooked black lentils simmered with butter and cream</td>
+                <td><span class="tag veg">Veg</span></td>
+                <td>₹280</td>
+            </tr>
+            <tr>
+                <td>Chicken Curry</td>
+                <td>Traditional spicy chicken curry</td>
+                <td><span class="tag nonveg">Non-Veg</span></td>
+                <td>₹320</td>
+            </tr>
+            <tr>
+                <td>Palak Paneer</td>
+                <td>Cottage cheese cubes in a smooth spinach gravy</td>
+                <td><span class="tag veg">Veg</span></td>
+                <td>₹280</td>
+            </tr>
+            <tr>
+                <td>Biryani (Chicken)</td>
+                <td>Fragrant basmati rice layered with spiced chicken</td>
+                <td><span class="tag nonveg">Non-Veg</span></td>
+                <td>₹350</td>
+            </tr>
+            <tr>
+                <td>Chole Bhature</td>
+                <td>Spiced chickpea curry with fluffy fried bread</td>
+                <td><span class="tag veg">Veg</span></td>
+                <td>₹250</td>
+            </tr>
+        </tbody>
     </table>
+
+    <!-- Breads -->
+    <div class="section-title"><h1>Breads & Rice</h1></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Butter Naan</td>
+                <td>Soft leavened bread brushed with butter</td>
+                <td>₹50</td>
+            </tr>
+            <tr>
+                <td>Dal Makhani</td>
+                <td>Naan topped with garlic and fresh coriander</td>
+                <td>₹120</td>
+            </tr>
+            <tr>
+                <td>Garlic Naan</td>
+                <td>Fluffy basmati rice</td>
+                <td>₹60</td>
+            </tr>
+            <tr>
+                <td>Jeera Rice</td>
+                <td>Basmati rice tempered with cumin seeds</td>
+                <td>₹60</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Desserts -->
+    <div class="section-title"><h1>Desserts</h1></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gulab Jamun (2 pcs)</td>
+                <td>Soft milk dumplings soaked in rose-flavored sugar syrup</td>
+                <td>₹100</td>
+            </tr>
+            <tr>
+                <td>Kulfi</td>
+                <td>Traditional Indian ice cream — choose mango or pistachio</td>
+                <td>₹140</td>
+            </tr>
+            <tr>
+                <td>Rasmalai</td>
+                <td>Soft cottage cheese patties in sweetened, cardamom- infused milk</td>
+                <td>₹160</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Image -->
+    <img src="Asset/image 1.png" class="menu-img">
+
+</div>
+
+<footer>
+    <p>The Spice Garden | 42 Masala Lane, Mumbai 400001 | +91 98765 43210</p>
+    <p>View Our Menu | Get In Touch</p>
+    <p>© 2026 The Spice Garden. All rights reserved.</p>
+</footer>
+
 </body>
-<h3>Desserts</h3>
-<table style="border-collapse: collapse;" border="1">
-   <tr>
-       <th>Dish</th>
-       <th>Description</th>
-       <th>Price</th>
-   </tr>
-   <tr>
-       <td>Gulab Jamun (2 pcs)</td>
-       <td>Soft milk dumplings soaked in rose-flavored sugar syrup</td>
-       <td>&rupee; 120</td>
-   </tr>
-   <tr>
-       <td>Kulfi</td>
-       <td>Traditional Indian ice cream - choose mango or pistachio</td>
-       <td>&rupee; 140</td>
-   </tr>
-   <tr>
-       <td>Rasmalai</td>
-       <td>Soft cottage cheese patties in sweetened, cardamom-infused milk</td>
-       <td>&rupee; 160</td>
-   </tr>
-</table>
-<img src="Asset\image 1.png" alt="Spice Garden" style="width: 400px; height: 550px;">
-<p>The Spice Garden | 42 Masala Lane, Mumbai 400001 | +91 98765 43210</p>
-<a href="Home.html">Home</a>|
-<a href="Contact.html">Contact Us</a>|
-<a href="About_me.html#about">About</a>
-<p>© 2026 The Spice Garden. All rights reserved.</p>
-</html>

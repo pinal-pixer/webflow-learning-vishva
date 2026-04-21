@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="Contact_Form.css">
 </head>
 <body>
-    <h1>The Spice Garden</h1>
-    <nav>
-        <a href="About_me.html">Home</a> | <a href="Menu.html">Menu</a> | <a href="Contact_Form.html">Contact</a> | <a href="About_me.html#about">About</a>
-    </nav>
-    <h2>Contact Form</h2>
-    <p>We'd love to hear from you! Reserve a table, send feedback, or just say hello.</p>
+    <div class="container">
+        <header>
+            <h3>The Spice Garden</h3>
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <h2 >Contact Form</h2>
+        <p>We'd love to hear from you! Reserve a table, send feedback, or just say hello.</p>
+    </div>
+    <div class="form-container">
     <form>
-        <fieldset>
+        <div class="form-group">
+        <fieldset class="field">
             <legend>Your Details</legend>
             <label for="fullName"> Full Name*</label><br>
             <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
@@ -25,7 +36,7 @@
             <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" maxlength="10"><br><br>
 
         </fieldset>
-        <fieldset>
+        <fieldset class="field">
             <legend>Your Message</legend>
             <label for="subject">Subject</label><br>
             <select id="subject" name="subject">
@@ -43,9 +54,9 @@
             
             <label for="reset"></label>
             <input type="reset" id="reset" name="reset" value="Clear Form">
-            
-            
         </fieldset>
+        </div>
+    </div>
         <h2>Business Hours</h2>
        <p>Monday – Friday</p>
         <blockquote>11:00 AM – 3:00 PM (Lunch) | 6:00 PM – 11:00 PM (Dinner)</blockquote>
