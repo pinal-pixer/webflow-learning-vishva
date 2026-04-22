@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        --color-1: #0d3849;
+        --color-2: #0d2949;
+        --color-3: #0e1b4b;
+        --color-4: #0f0d49;
+        --color-5: #1e0d49;
+        --color-6: #04a91a;
+        --color-7: #04a943;
+        --color-8: #04aa6d;
+        --color-9: #04a996;
+        --color-10: #0493a9;
+        --color-11: #b518c3;
+        --color-12: #c318a7;
+        --color-13: #c5187e;
+        --color-14: #c31851;
+        --color-15: #c31826;
+      }
+
+      .body1 {
+        background-color: var(--color-9);
+        font-size: xx-large;
+        h1 {
+          color: var(--color-1);
+          font-size: small;
+        }
+        h2 {
+          color: var(--color-2);
+          font-size: medium;
+        }
+        h3 {
+          color: var(--color-3);
+          font-size: large;
+        }
+      }
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem;
+      }
+      .secondary-link {
+        color: var(--color-5);
+      }
+      .secondary-link:hover {
+        color: var(--color-11);
+      }
+      .error-color {
+        color: var(--color-15);
+      }
+      .spacing-variables-sm {
+        --spacing-variables-sm: 20px;
+        display: flex;
+        padding: var(--spacing-variables-sm);
+        margin-bottom: 10px;
+      }
+      .spacing-variables-md {
+        --spacing-variables-md: 40px;
+        display: flex;
+        padding: var(--spacing-variables-md);
+        margin-bottom: 10px;
+      }
+      .spacing-variables-lg {
+        --spacing-variables-lg: 60px;
+        display: flex;
+        padding: var(--spacing-variables-lg);
+        margin-bottom: 10px;
+      }
+      .spacing-variables-xl {
+        --spacing-variables-xl: 80px;
+        display: flex;
+        padding: var(--spacing-variables-xl);
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body class="body1">
+    <div class="container1">
+      <h1>
+        Define a color palette on :root — primary, secondary, accent,
+        background, text, error, success (at least 7 colors)
+      </h1>
+      <h2>h2 define</h2>
+      <h3>h3 define</h3>
+      <div style="display: flex; gap: 1rem">
+        <p>primary color:</p>
+        <p
+          style="background-color: var(--color-15); width: 50px; height: 50px"
+        ></p>
+        <p
+          style="background-color: var(--color-14); width: 50px; height: 50px"
+        ></p>
+        <p
+          style="background-color: var(--color-13); width: 50px; height: 50px"
+        ></p>
+        <p
+          style="background-color: var(--color-12); width: 50px; height: 50px"
+        ></p>
+        <p
+          style="background-color: var(--color-11); width: 50px; height: 50px"
+        ></p>
+      </div>
+    </div>
+    <hr />
+    <div style="display: flex; gap: 1rem">
+      <p style="font-weight: bold">secondary color:</p>
+    </div>
+    <div>
+      <a href="https://www.google.com" class="secondary-link">Google</a>
+    </div>
+    <div>
+      <p style="font-weight: bold; background-color: var(--color-11)">
+        accent color:
+      </p>
+    </div>
+    <div class="error-color">
+      <p>error color:</p>
+    </div>
+    <hr />
+    <div
+      class="spacing-variables-sm"
+      style="background-color: var(--color-1); color: white"
+    >
+      Define spacing variables — sm
+    </div>
+    <div
+      class="spacing-variables-md"
+      style="background-color: var(--color-1); color: white"
+    >
+      Define spacing variables — md
+    </div>
+    <div
+      class="spacing-variables-lg"
+      style="background-color: var(--color-1); color: white"
+    >
+      Define spacing variables — lg
+    </div>
+    <div
+      class="spacing-variables-xl"
+      style="background-color: var(--color-1); color: white"
+    >
+      Define spacing variables — xl
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        .contact-form {
+           font-size: x-large;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            &:hover {
+                cursor: pointer;
+                background-color: #f0f0f0;
+            }
+            .toggle {
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+
+    <button onclick="toggleDarkMode()">Toggle dark mode</button>
+
+       
+    <script>
+
+         function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }  
+        function myFunction() {
+        
+    if(document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("password").value != ""){
+        alert("Form submitted successfully!");
+    }
+    }
+    function myReset() {
+    alert("Form reset successfully!");
+    }
+    </script>
+    
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+       
+    </nav>
+    <form class="contact-form"  >
+        <div class="toggle">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required >
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <div class="toggle">
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" value="Submit" style="border: 2px solid black; padding: 10px;" onclick="myFunction()">   
+            </div>
+            
+
+            <label for="reset"></label>
+            <input type="reset" id="reset" name="reset" value="Reset" style="border: 2px solid black; padding: 10px;" onclick="myReset()">
+        </div>
+    </form>
+</body>
+</html>

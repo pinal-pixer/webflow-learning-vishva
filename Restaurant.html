@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+/* Image styling */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*button styling*/
+button {
+  background-color: lightgray;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+button:hover {
+  background-color: lightgreen;
+  transform: scale(1.1);
+}
+ #grad1 {
+        height: 200px;
+        background-color: rgb(246, 173, 173); /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom, rgb(235, 139, 139), rgb(233, 233, 187));
+        h2 {
+            font-family: cursive;
+            font-weight: bold;
+            font-style: oblique;
+            color: white;
+            align-items: center;
+            text-align: center;
+            padding: 75px;
+        }
+    }
+  .flip-card {
+    box-shadow: inset  0 0 10px red;
+    scale: 1.0;
+    &:hover {
+      img {
+        filter: grayscale(100%);
+        scale: 1.1;
+      }
+      box-shadow: inset  0 0 10px blue;
+    }
+  }
+  .notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+#section1 {
+  height: 120px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 100px;
+  background-color: rgb(243, 243, 206);
+}
+
+</style>    
+</head>
+<body>
+  <div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+
+  <a href="#" class="notification">
+      <span>Inbox</span>
+      <span class="badge">5</span>
+      <p>Notification button with badge there was use the position property and border-radius property to achieve this.</p>
+  </a>
+  <div class="flip-card">
+      <img src="Asset\Image.png" alt="Avatar" style="width:300px;height:300px;">
+  </div>
+   
+    <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>  
+    </div>
+    <div id="grad1">
+    <h2>Typical Breakpoints</h2>
+    </div>
+    <p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>   
+    <fieldset>
+        <legend>Survey Form</legend>
+
+    <form action="Restaurant.html" >
+        <label for="Rating">Rating:</label>
+        <input type="number" id="Rating" name="Rating" min="1" max="10"><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="datalist">Choose a city:</label>
+        <input list="cities" id="datalist" name="datalist">
+        <datalist id="cities">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            <option value="Houston">
+            <option value="Phoenix">
+            <option value="Philadelphia">
+            <option value="San Antonio">
+            <option value="San Diego" hidden>
+            <option value="Dallas" disabled>
+        </datalist><br>
+        
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color">
+            <optgroup label="Primary Colors">
+                <option value="red">Red</option>
+                <option value="green" >Green</option>
+                <option value="blue" disabled>Blue</option>
+            </optgroup>
+             <optgroup label="Secondary Colors">
+                <option value="orange"hidden>Orange</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+            </optgroup>
+        </select><br>
+          
+        <label for="submit">Submit</label>
+        <input type="submit" id="submit" name="submit"><br>
+        <div style="scroll-behavior: smooth;">
+          <label for="reset">Reset</label>
+          <input type="reset" id="reset" name="reset" id="reset-button" ><br>
+        </div>
+        <label for="button">Button</label>
+        <button>Click Me!</button><br>
+
+      </fieldset>
+    <h2>Gray Vertical Navbar</h2>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about_me.html">About Me</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="restaurant.html">Restaurant</a></li>
+</ul>
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+<button class="buttonload">
+  <i class="fa fa-spinner fa-spin"></i>Loading
+</button>
+<img onclick="smoothScroll('target-image')" src="Asset\Image (2).png" alt="Restaurant Image" id="target-image">
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+div {
+  font-size: 340px;
+  transition: transform 0.3s;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+div:hover {
+  transform: scale(1.1);
+  color: blue;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+img {
+  width: 34%;
+  height: 34%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  filter: brightness(1.2);
+}
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+
+<div> hello</div>
+<p>Animation that moves the text up and down there was use the @keyframes rule and transition property to achieve this.</p>
+
+
+<h1>Notification Button</h1>
+
+<a href="#" class="notification">
+  <span>Inbox</span>
+  <span class="badge">5</span>
+  <p>Notification button with badge there was use the position property and border-radius property to achieve this.</p>
+</a>
+<hr>
+<img src="Asset/image 1.png" alt="Placeholder Image">
+<p>An image that applies a grayscale filter and transitions to full color on hover there was use the filter property and transition property to achieve this.</p>
+</body>
+</html>
