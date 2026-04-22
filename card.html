@@ -19,14 +19,14 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+.row {display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 100px;
+}
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: all    ;
-}
+
 /* Cards should be 3 per row on wide screens, 2 per row on medium, 1 per row on small */
 /* Responsive columns */
 @media only screen and (max-width: 768px) {
@@ -41,7 +41,8 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  size-adjust: q0;
+  align-items: stretch;
+  width: 360px;
 }
 </style>
 </head>
@@ -51,36 +52,39 @@ body {
 <p>Resize the browser window to see the effect.</p>
 
 <div class="row">
-  <div class="column">
+ 
     <div class="card">
       <h3>Card 1</h3>
       <img src="Asset/download.png" alt="Card 1">
       <p>Some text</p>
       <p>Some text</p>
+      <button onclick="window.location.href='https://www.google.com'">Click me</button>
     </div>
-  </div>
-
-  <div class="column">
     <div class="card">
       <h3>Card 2</h3>
+      <img src="Asset/download.png" alt="Card 2">
       <p>Some text</p>
+      <p>this is the card 2 description
+        that contain image and text
+      </p>
       <p>Some text</p>
+      <button onclick="window.location.href='https://www.google.com'">Click me</button>
     </div>
-  </div>
-  
-  <div class="column">
     <div class="card">
       <h3>Card 3</h3>
+      <img src="Asset/download.png" alt="Card 3">
+      <p>Some text this is the card 3 description</p>
       <p>Some text</p>
-      <p>Some text</p>
+      <button onclick="window.location.href='https://www.google.com'">Click me</button>
     </div>
-  </div>
-  
-  <div class="column">
     <div class="card">
       <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <img src="Asset/download.png" alt="Card 4">
+      <p>Some text this is the card 4 description
+        that contain image and text
+        and also have button
+      </p>
+      <button onclick="window.location.href='https://www.google.com'">Click me</button>
     </div>
   </div>
 </div>
