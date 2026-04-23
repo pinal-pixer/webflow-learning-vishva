@@ -1,0 +1,171 @@
+
+<!-- Build a magazine-style blog layout using CSS Grid:
+A featured article that spans 2 columns and 2 rows at the top
+Regular articles in a 3-column grid below
+A "sidebar" column on the right with recent posts and categories
+Use grid-auto-rows: minmax(200px, auto) for flexible row heights
+Each article card should have an image, title, excerpt, and author
+Add hover effects on cards (shadow, slight scale)
+Fully responsive — 3 columns → 2 columns → 1 column at different breakpoints -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 100px;
+}
+
+/* Clear floats after the columns */
+
+/* Cards should be 3 per row on wide screens, 2 per row on medium, 1 per row on small */
+/* Responsive columns */
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(117, 8, 8, 0.2);
+  
+  text-align: center;
+  background-color: #f1f1f1;
+  align-items: stretch;
+  width: 360px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(195, 216, 237);
+  padding: 5px;
+  gap: 5px;
+  min-width: 360px;
+  max-width: 1fr;
+}
+
+.container div {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  &:first-child{
+    grid-column: span 2;
+  }
+  &:nth-last-child(2){
+    grid-row: span 2;
+  }
+}
+</style>
+</head>
+<body>
+    <!-- Build a magazine-style blog layout using CSS Grid:
+A featured article that spans 2 columns and 2 rows at the top
+Regular articles in a 3-column grid below
+A "sidebar" column on the right with recent posts and categories
+Use grid-auto-rows: minmax(200px, auto) for flexible row heights
+Each article card should have an image, title, excerpt, and author
+Add hover effects on cards (shadow, slight scale)
+Fully responsive — 3 columns → 2 columns → 1 column at different breakpoints -->
+<div class="container">
+    <div>
+        <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div>      
+        <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>  
+    <div>
+        <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button></div>
+    <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+  <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+  <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+  <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+  <div>      <h3>Card 1</h3>
+        <img src="Asset/download.png" alt="Card 1">
+        <p>Some text</p>
+        <p>Some text</p>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+  
+  
+</div>
+
+</body>
+</html>

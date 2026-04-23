@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(195, 216, 237);
+  padding: 5px;
+  gap: 5px;
+  min-width: 250px;
+  max-width: 1fr;
+}
+
+.container div {
+  background-color: #3f5772;
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  &:first-child{
+    grid-column: span 2;
+  }
+  &:nth-last-child(2){
+    grid-row: span 2;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h1>Grid Items</h1>
+
+<div class="container">
+    <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;"></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;"></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>  
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>  
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+  <div><img src="Asset/download.png" alt="Image 1" style="object-fit: cover;" ></div>
+</div>
+
+</body>
+</html>

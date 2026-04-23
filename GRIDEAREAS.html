@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-areas:
+        "sidebar header widget1"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+      grid-template-columns: 250px 1fr 300px;
+      grid-template-rows: 80px 1fr 1fr auto;
+      gap: 10px;
+      height: 100vh;
+      transition: all 0.3s ease;
+    }
+
+    .dashboard.collapsed {
+      grid-template-columns: 0 1fr 300px;
+    }
+    header {
+      grid-area: header;
+      background-color: #e6c5fb;
+      width: 100%;
+    }
+    main {
+      grid-area: main;
+      background-color: #f5ebfc;
+      overflow: scroll;
+    }
+       
+    .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(195, 216, 237);
+  padding: 15px;
+  gap: 5px;
+  min-width: 90px;
+
+  margin: auto;
+}
+
+.container div {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 100px;
+}
+
+/* Clear floats after the columns */
+@media only screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 100%;
+  p{
+    font-size: medium;
+    text-align: left;
+  }
+  h1{
+    font-size: large;
+    text-align: left;
+  }
+  button {
+       width: fit-content;
+  }
+}
+
+
+
+    .widget1 {
+      grid-area: widget1;
+      background-color: #f5ebfc;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;  
+    }
+    .widget2 {
+      grid-area: widget2;
+      background-color: #f5ebfc;
+      padding-bottom: 10px;
+      padding-top: 10px;  
+      padding-right: 20px;
+      padding-left: 20px;  
+    }
+    footer {
+      grid-area: footer;
+      background-color: #e3c9f5;
+    }
+    #sidebar {
+      grid-area: sidebar;
+      background-color: #f5ebfc;
+      overflow: hidden;
+      width: 100%;
+      max-width: 250px;
+      transition: all 0.3s ease;
+    }
+
+    #main {
+      padding: 16px;
+    }
+    #main .closebtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+    }
+    #main .closebtn:hover {
+      background-color: #444;
+    }
+    .a {
+        display: block;
+        font-size: 20px;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+  </style>
+  <body>
+    <!--  --Build a dashboard-style layout using named grid areas:
+Define a layout with: header, sidebar, main, widget1, widget2, footer
+Use grid-template-areas to arrange them:
+Desktop: sidebar on left, main content in center, widgets on right
+Tablet: sidebar collapses to top, main spans full width, widgets stack below
+Mobile: everything stacks in a single column
+The sidebar should be a fixed 250px width on desktop
+The main area should use 1fr to fill remaining space
+Add content inside each area — nav links in sidebar, cards in main, stats in widgets
+Use @media queries to change grid-template-areas at different breakpoints-->
+    <div class="dashboard">
+      <heder>
+        <div class="header-content">
+          <button class="closebtn" onclick="openNav()">☰</button>
+          <h1>Header</h1>
+          <a href="https://www.google.com">Google</a>
+        </div>
+      </heder>
+      <sidebar id="sidebar">
+        <h2>Sidebar</h2>
+        <a href="home.html" class="a">Home</a><br>
+        <a href="about.html" class="a">About</a><br>
+        <a href="contact.html" class="a">Contact</a><br>
+        <h2>Management</h2>
+        <h2>Productivity</h2>
+        <h2>Project Management</h2>
+        <h2>Communication</h2>
+        <h2>Collaboration</h2>
+        <h2>Insights</h2>
+        <script>
+          let isOpen = true;
+          function openNav() {
+            isOpen = !isOpen;
+            if (isOpen) {
+              document.querySelector("#sidebar").style.maxWidth = "250px";
+              document
+                .querySelector(".dashboard")
+                .classList.remove("collapsed");
+            } else {
+              document.querySelector("#sidebar").style.maxWidth = "0";
+              document.querySelector(".dashboard").classList.add("collapsed");
+            }
+          }
+        </script>
+      </sidebar>
+      <main id="main">
+        <div class="container">
+        <div class="card">
+        <img src="Asset\card1.avif" alt="Card 1">
+        <p>Productivity</p>
+        <h1>10 Best Miro Alternatives & Competitors in 2026|10 Best Miro Alternatives & Competitors in 2026</h1>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div class="card">      
+        
+        <img src="Asset\Managment.avif" alt="Card 2">
+        <p>Management</p>
+        <h1>From Time Constraints to Time Freedom: The Ultimate Agency Time Tracking Guide</h1>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div class="card">
+        <img src="Asset\Productyvity.avif" alt="Card 3">
+        <p>Productivity</p>
+        <h1>15 Best Remote Collaboration Tools to Supercharge Your Team in 2025|15 Best Remote Collaboration Tools to Supercharge Your Team in 2025</h1>
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>  
+    <div class="card">      
+        <img src="Asset\Project-Management.avif" alt="Card 4">
+        <p>Project Management</p>
+        <h1>15 Essential Work From Home Tips to Stay Focused and Productive</h1>
+
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div>
+    <div class="card">      
+        <img src="Asset\Insides.avif" alt="Card 4">
+        <p>Insights</p>
+        <h1>Every Tool Has an Inbox But Do They Have a Purpose?</h1>
+
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div> 
+     
+ <div class="card">      
+        <img src="Asset\Collboration.webp" alt="Card 4">
+        <p>Collaboration</p>
+        <h1>Writing the Perfect Executive Summary: A Step-by-Step Guide with Examples</h1>
+
+        <button onclick="window.location.href='https://www.google.com'">Click me</button>
+    </div> 
+</main>  
+      <div class="widget1">
+        <h4>Widget 1</h4>
+        <p>The sidebar should be a fixed 250px width on desktop</p>
+        <p>The main area should use 1fr to fill remaining space</p>
+        <p>Add content inside each area — nav links in sidebar, cards in main, stats in widgets</p>
+        <p>Use @media queries to change grid-template-areas at different breakpoints</p>
+      </div>
+      <div class="widget2">
+        <h5>Widget 2</h5>
+        <p>The sidebar should be a fixed 250px width on desktop</p>
+        <p>The main area should use 1fr to fill remaining space</p>
+        <p>Add content inside each area — nav links in sidebar, cards in main, stats in widgets</p>
+        <p>Use @media queries to change grid-template-areas at different breakpoints</p>
+      </div>
+      <footer>
+        <p>
+          The Spice Garden | 42 Masala Lane, Mumbai 400001 | +91 98765 43210
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
