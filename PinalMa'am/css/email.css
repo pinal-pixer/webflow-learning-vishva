@@ -1,0 +1,44 @@
+.tr1 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification {
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.bugde {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+table {
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.table-container {
+  width: 100%;
+  height: 100vh;
+}

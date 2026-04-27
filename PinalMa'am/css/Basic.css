@@ -1,0 +1,47 @@
+body {
+    display: block;
+}
+form {
+    background-color: white ;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 20px;
+    object-fit: contain;
+
+}
+
+caption {
+    text-align: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

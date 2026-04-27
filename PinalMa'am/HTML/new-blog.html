@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Blog</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .main-div {
+        display: flex;
+      }
+      .sidebar {
+        width: 200px;
+        background-color: bisque;
+      }
+      .main {
+        flex: 1;
+      }
+      .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        background-color: rgb(255, 255, 255);
+        gap: 24px;
+        margin: 0 auto;
+        max-width: 1440px;
+      }
+
+      .container div {
+        background-color: #ffffff;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 100px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background-color: #ffffff;
+        width: -webkit-fill-available;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #d2d2d2;
+        }
+
+        p {
+          font-size: medium;
+          font-family:
+            "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          text-align: left;
+        }
+        h1 {
+          font-size: 24px;
+          font-family:
+            "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          text-align: left;
+        }
+        button {
+          border: 6px solid transparent;
+          width: fit-content;
+          color: #000000;
+          background-color: rgb(124, 124, 124);
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(236, 234, 234);
+          }
+        }
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* desktop (default) */
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .sidebar {
+        display: block;
+        max-width: 250px;
+        width: 100%;
+      }
+
+      /* Tablet */
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .sidebar {
+          display: none;
+        }
+      }
+
+      /* mobile */
+      @media (max-width: 449px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="sidebar"></div>
+      <main class="main">
+        <header class="header"></header>
+        <section>
+          <div class="container">
+            <div class="card">
+              <img src="Asset\card1.avif" alt="Card 1" />
+              <p>Productivity</p>
+              <h1>
+                10 Best Miro Alternatives & Competitors in 2026|10 Best Miro
+                Alternatives & Competitors in 2026
+              </h1>
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="Asset\card1.avif" alt="Card 1" />
+              <p>Productivity</p>
+              <h1>
+                10 Best Miro Alternatives & Competitors in 2026|10 Best Miro
+                Alternatives & Competitors in 2026
+              </h1>
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Managment.avif" alt="Card 2" />
+              <p>Management</p>
+              <h1>
+                From Time Constraints to Time Freedom: The Ultimate Agency Time
+                Tracking Guide
+              </h1>
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Productyvity.avif" alt="Card 3" />
+              <p>Productivity</p>
+              <h1>
+                15 Best Remote Collaboration Tools to Supercharge Your Team in
+                2025|15 Best Remote Collaboration Tools to Supercharge Your Team
+                in 2025
+              </h1>
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Project-Management.avif" alt="Card 4" />
+              <p>Project Management</p>
+              <h1>
+                15 Essential Work From Home Tips to Stay Focused and Productive
+              </h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Insides.avif" alt="Card 4" />
+              <p>Insights</p>
+              <h1>Every Tool Has an Inbox But Do They Have a Purpose?</h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="Asset\Collboration.webp" alt="Card 4" />
+              <p>Collaboration</p>
+              <h1>
+                Writing the Perfect Executive Summary: A Step-by-Step Guide with
+                Examples
+              </h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Collboration.webp" alt="Card 4" />
+              <p>Collaboration</p>
+              <h1>
+                Writing the Perfect Executive Summary: A Step-by-Step Guide with
+                Examples
+              </h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Collboration.webp" alt="Card 4" />
+              <p>Collaboration</p>
+              <h1>
+                Writing the Perfect Executive Summary: A Step-by-Step Guide with
+                Examples
+              </h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+            <div class="card">
+              <img src="Asset\Collboration.webp" alt="Card 4" />
+              <p>Collaboration</p>
+              <h1>
+                Writing the Perfect Executive Summary: A Step-by-Step Guide with
+                Examples
+              </h1>
+
+              <button onclick="window.location.href = 'https://www.google.com'">
+                Click me
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

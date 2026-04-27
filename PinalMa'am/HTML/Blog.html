@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+           display: grid;
+      grid-template-areas:
+        "sidebar header widget1"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+     
+      
+        }
+        header {
+            grid-area: header;
+            background-color: #ffffff;
+            width: 100%;
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2rem;
+                color: #666;
+            }
+        }
+    main {
+      grid-area: main;
+      background-color: #f5ebfc;
+      overflow: scroll;
+    }
+        .container {
+            display: grid;
+            background-color: rgb(195, 216, 237);
+            padding: 15px;
+            gap: 5px;
+            min-width: 90px;
+            margin: auto;
+        }
+
+        .container div {
+            background-color: #ffffff;
+            color: #000;
+            font-size: 30px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+        }
+
+            /* Clear floats after the columns */
+            @media only screen and (max-width: 1024px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            }
+        .card {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            width: 100%;
+            p{
+                font-size: medium;
+                text-align: left;
+            }
+            h1{
+                font-size: large;
+                text-align: left;
+            } 
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Build a fully responsive blog page with these requirements:
+Mobile (< 768px): Single column layout, hamburger-style nav (links stacked vertically), full-width images, stacked cards
+Tablet (768px – 1024px): Two-column article grid, horizontal nav, sidebar appears below content
+Desktop (> 1024px): Three-column article grid, horizontal nav with spacing, sidebar on the right
+Use mobile-first approach — write base styles for mobile, then min-width media queries
+Typography must scale: headings should be smaller on mobile, larger on desktop
+Use clamp() for at least one fluid font size
+All images must be responsive — no overflow at any width -->
+    <div class="container">
+        <header>
+            <h1>
+                The Teamcamp Blogs
+            </h1>
+            <p>Tips and ideas to help you delight your project success</p>
+        </header>
+
+        <main id="main">
+                    <div class="container">
+                    <div class="card">
+                    <img src="Asset\card1.avif" alt="Card 1">
+                    <p>Productivity</p>
+                    <h1>10 Best Miro Alternatives & Competitors in 2026|10 Best Miro Alternatives & Competitors in 2026</h1>
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div>
+                <div class="card">      
+                    
+                    <img src="Asset\Managment.avif" alt="Card 2">
+                    <p>Management</p>
+                    <h1>From Time Constraints to Time Freedom: The Ultimate Agency Time Tracking Guide</h1>
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div>
+                <div class="card">
+                    <img src="Asset\Productyvity.avif" alt="Card 3">
+                    <p>Productivity</p>
+                    <h1>15 Best Remote Collaboration Tools to Supercharge Your Team in 2025|15 Best Remote Collaboration Tools to Supercharge Your Team in 2025</h1>
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div>  
+                <div class="card">      
+                    <img src="Asset\Project-Management.avif" alt="Card 4">
+                    <p>Project Management</p>
+                    <h1>15 Essential Work From Home Tips to Stay Focused and Productive</h1>
+
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div>
+                <div class="card">      
+                    <img src="Asset\Insides.avif" alt="Card 4">
+                    <p>Insights</p>
+                    <h1>Every Tool Has an Inbox But Do They Have a Purpose?</h1>
+
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div> 
+                
+                <div class="card">      
+                    <img src="Asset\Collboration.webp" alt="Card 4">
+                    <p>Collaboration</p>
+                    <h1>Writing the Perfect Executive Summary: A Step-by-Step Guide with Examples</h1>
+
+                    <button onclick="window.location.href='https://www.google.com'">Click me</button>
+                </div>
+        </main> 
+    </div>
+</body>
+</html>

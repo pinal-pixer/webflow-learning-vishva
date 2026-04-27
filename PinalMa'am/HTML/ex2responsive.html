@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation Patterns</title>
+
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pattern 1 */
+
+@media (max-width: 768px) {
+  .pattern1 {
+    flex-direction: column;
+  }
+}
+
+/* Pattern 2 */
+
+.menu {
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  background-color: antiquewhite;
+}
+
+.menu.show {
+  display: flex;
+}
+
+/* Pattern 3 — Bottom Tab */
+
+.bottom-nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+ 
+    padding: 10px 0;
+  }
+
+}
+.nav-links.pattern1 {
+ position: sticky;
+ top: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<nav class="nav-links pattern1">
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<h2>Pattern 2 — Hamburger Toggle</h2>
+
+<button onclick="toggleNav()">☰ Menu</button>
+
+<nav id="menu" class="menu">
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
+</nav>
+
+
+
+<script>
+function toggleNav() {
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+    <div class="container">
+        <header>
+            <h3>The Spice Garden</h3>
+        
+        </header>
+    </div>
+    <div class="content">
+        <h2 >Contact Form</h2>
+        <p>We'd love to hear from you! Reserve a table, send feedback, or just say hello.</p>
+    </div>
+    <div class="form-container">
+    <form>
+        <div class="form-group">
+        <fieldset class="field">
+            <legend>Your Details</legend>
+            <label for="fullName"> Full Name*</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+
+            <label for="email"> Email*</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="phone"> Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" maxlength="10"><br><br>
+
+        </fieldset>
+        <fieldset class="field">
+            <legend>Your Message</legend>
+            <label for="subject">Subject</label><br>
+            <select id="subject" name="subject">
+                <option value="">— Select a topic —</option>
+                <option value="reservation">Reservation</option>
+                <option value="feedback">Feedback</option>
+                <option value="general">General Inquiry</option>
+            </select><br><br>
+            
+            <label for="message">Message*</label><br>
+            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea><br><br>
+
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" value="Send Message">
+            
+            <label for="reset"></label>
+            <input type="reset" id="reset" name="reset" value="Clear Form">
+        </fieldset>
+        </div>
+    </div>
+        <h2>Business Hours</h2>
+       <p>Monday – Friday</p>
+        <blockquote>11:00 AM – 3:00 PM (Lunch) | 6:00 PM – 11:00 PM (Dinner)</blockquote>
+        <p>Saturday & Sunday</p>
+        <blockquote>11:00 AM – 11:00 PM (All Day)</blockquote>
+        <p>Public Holidays</p>
+        <blockquote>12:00 PM – 10:00 PM</blockquote>
+        <p>Address</p>
+        <blockquote>42 Masala Lane, Colaba, Mumbai 400001, Maharashtra, India</blockquote>
+        <p>Phone</p>
+        <blockquote>+91 98765 43210</blockquote>
+        <p>Email</p>
+        <blockquote>hello@thespicegarden.in</blockquote>
+
+        <h2>Find Us</h2>
+        <iframe id="map" src="https://www.google.com/maps/embed?" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <p>The Spice Garden | 42 Masala Lane, Mumbai 400001 | +91 98765 43210</p>
+        <p><a href="About_me.html">Home</a> | <a href="Contact_Form.html">Contact Us</a> | <a href="About_me.html#about">About</a></p>
+        <p>© 2026 The Spice Garden. All rights reserved.</p>
+ </form>
+ <h2>Pattern 3 — Bottom Tab Bar</h2>
+
+<div class="bottom-nav">
+<div> 🏠 Home</div>
+<div> 🔍 Search</div>
+<div> ❤️ Likes</div>
+<div> 👤 Profile</div>
+</div> 
+</body>
+</html>
+
