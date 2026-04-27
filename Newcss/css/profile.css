@@ -1,17 +1,6 @@
 body {
-    /*Apply the background-color to the body */
+  /*Apply the background-color to the body */
   background-color: #faf5f5;
-}
- 
-fieldset{
-    /*Apply a 2px solid black border to the fieldset */
-    border: 2px solid black;
-    /*Apply a border-radius of 10px to the fieldset */
-    border-radius: 10px;
-    legend {
-        /*Set the font size of the legend to 1.5rem */
-        font-size: 1.5rem;
-    }
 }
 
 h1,
@@ -24,53 +13,51 @@ p {
   background-color: bisque;
   /*Set the font size to large */
   font-size: large;
- 
 }
 
-ul ::marker{
-    /*Set the color of the marker to red */
-    color: red;
+ul ::marker {
+  /*Set the color of the marker to red */
+  color: red;
 }
 
-img{
-    /*Set the border radius to 50% */
-    border-radius: 50%;
-    /*Set the width to 200px */
-    width: 200px;
-    /*Set the height to 200px */
-    height: 200px;
-    /*Set the padding to 10px */
-    padding: 10px;
-    /*Set the margin to 20px */
-    margin: 20px;
+img {
+  /*Set the border radius to 50% */
+  border-radius: 12%;
+  /*Set the width to 200px */
+  width: 200px;
+  /*Set the height to 200px */
+  height: 200px;
+  /*Set the padding to 10px */
+  padding: 10px;
+  /*Set the margin to 20px */
+  margin: 20px;
 }
- h1{
-    /*Set the background image to subtitle2.jfif */
-     background-image: url("../assets/subtitle2.jfif"); 
-     /*Set the background size to 100% auto */
-     background-size: 100% auto;
-     /*Set the background position to 0% 50% */
+h1 {
+  /*Set the background image to subtitle2.jfif */
+  background-image: url("../assets/subtitle2.jfif");
+  /*Set the background size to 100% auto */
+  background-size: 100% auto;
+  /*Set the background position to 0% 50% */
   background-position: 0% 50%;
   /*Set the background repeat to no-repeat */
   background-repeat: no-repeat;
-  
- }
+}
 
- a{
-    /*Set the color to red when the link is hovered */
-    &:hover{
-        color: red;
-    }
-    /*Set the color to blue when the link is visited */
-    &:visited{
-        color: blue;
-    }
-    /*Set the color to green when the link is active */
-    &:active{
-        color: green;
-    }
-    /*Set the color to purple when the link is focused */
-    &:focus{
-        color: purple;
-    }
- }
+a {
+  /*Set the color to red when the link is hovered */
+  &:hover {
+    color: red;
+  }
+  /*Set the color to blue when the link is visited */
+  &:visited {
+    color: blue;
+  }
+  /*Set the color to green when the link is active */
+  &:active {
+    color: green;
+  }
+  /*Set the color to purple when the link is focused */
+  &:focus {
+    color: purple;
+  }
+}
