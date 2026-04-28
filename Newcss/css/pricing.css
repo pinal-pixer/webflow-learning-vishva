@@ -1,0 +1,141 @@
+body {
+  background-color: #f4f3ff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 180px;
+}
+
+h1 {
+  text-align: left;
+  font-family: "Inter";
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: bolder;
+  margin: 0px;
+}
+p {
+  text-align: left;
+  font-family: "Inter";
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0px !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* ✅ proper spacing */
+  width: 100%;
+  margin: 50px auto;
+  z-index: -1;
+}
+.card {
+  width: 300px;
+  max-height: 575px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -1;
+}
+.card-sub {
+  position: relative;
+  width: 300px;
+  max-height: 599px !important;
+  height: 100% !important;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.card {
+  border: 2px solid #ddd;
+}
+
+.card-sub {
+  border: 2px solid #6c63ff;
+}
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.btn,
+.btn2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn button {
+  margin-top: 10px;
+}
+.btn2 button {
+  margin-top: 45px;
+}
+h2 {
+  color: #777777;
+}
+sub {
+  font-size: 14px;
+  color: #6b7280;
+}
+button {
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #6c63ff;
+  width: 100%;
+  margin: auto;
+}
+ul {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.badge {
+  position: absolute;
+  top: -22px;
+  right: 91px;
+  background-color: #6c63ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #6c63ff;
+  align-items: center;
+}
