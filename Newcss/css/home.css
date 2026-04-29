@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  background-color: #964000;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #964000;
+  max-width: 1440px;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-bottom: 16px;
+  padding-right: 40px;
+  align-items: center;
+}
+nav a {
+  font-family: "Georgia Pro";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  color: #de9f3a;
+  &:hover {
+    color: #ffffff;
+  }
+  &:active {
+    color: #b93535;
+  }
+
+  &:focus {
+    color: #b93535;
+  }
+}
+h1 {
+  color: #de9f3a;
+  margin: 0;
+}

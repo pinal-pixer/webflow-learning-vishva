@@ -5,9 +5,9 @@ body {
 
 header {
   background-color: #964000;
-  padding-top: 8px;
+  padding-top: 16px;
   padding-left: 40px;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
   padding-right: 40px;
   display: flex;
   justify-content: space-between;

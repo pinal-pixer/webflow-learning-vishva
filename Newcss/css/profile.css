@@ -13,11 +13,10 @@ h1 {
   /*Set the background repeat to no-repeat */
   background-repeat: no-repeat;
 }
-  
-blockquote{
+
+blockquote {
   padding: 10px;
   margin: 10px 10px 10px 10px;
-
 }
 
 h2 {
@@ -35,7 +34,7 @@ h3 {
   font-size: large;
 }
 p {
-  font-family: "Lato", "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   /*Set the background color to bisque */
   background-color: bisque;
   /*Set the font size to large */
