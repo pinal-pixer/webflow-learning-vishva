@@ -2,13 +2,40 @@ body {
   /*Apply the background-color to the body */
   background-color: #faf5f5;
 }
-
-h1,
-h2,
-h3,
-p {
-  /*Set the font family to Audiowide */
+h1 {
   font-family: "Audiowide", sans-serif;
+  /*Set the background image to subtitle2.jfif */
+  background-image: url("../assets/subtitle2.jfif");
+  /*Set the background size to 100% auto */
+  background-size: 100% auto;
+  /*Set the background position to 0% 50% */
+  background-position: 0% 50%;
+  /*Set the background repeat to no-repeat */
+  background-repeat: no-repeat;
+}
+  
+blockquote{
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+
+}
+
+h2 {
+  font-family: "Audiowide", sans-serif;
+  background-color: bisque;
+  /*Set the font size to large */
+  font-size: large;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+}
+h3 {
+  font-family: "Audiowide", sans-serif;
+  background-color: bisque;
+  /*Set the font size to large */
+  font-size: large;
+}
+p {
+  font-family: "Lato", "Poppins", sans-serif;
   /*Set the background color to bisque */
   background-color: bisque;
   /*Set the font size to large */
@@ -18,6 +45,8 @@ p {
 ul ::marker {
   /*Set the color of the marker to red */
   color: red;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 img {
@@ -31,16 +60,6 @@ img {
   padding: 10px;
   /*Set the margin to 20px */
   margin: 20px;
-}
-h1 {
-  /*Set the background image to subtitle2.jfif */
-  background-image: url("../assets/subtitle2.jfif");
-  /*Set the background size to 100% auto */
-  background-size: 100% auto;
-  /*Set the background position to 0% 50% */
-  background-position: 0% 50%;
-  /*Set the background repeat to no-repeat */
-  background-repeat: no-repeat;
 }
 
 a {

@@ -66,6 +66,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid #e0dff7;
+  overflow: hidden;
 }
 .card-sub {
   position: relative;
@@ -79,6 +80,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 12px 40px 0px #6c63ff26;
+  overflow: visible;
 }
 
 .purple {
@@ -111,15 +113,31 @@ h3 {
   height: 100%;
 }
 
-.btn button {
+.b1 {
   margin-top: 10px;
   padding: 14px;
   border-radius: 12px;
+  background-color: #ffffff;
+  color: #6c63ff;
 }
-.btn2 button {
+.b1:hover {
+  opacity: 0.85;
+}
+.b2 {
   margin-top: 45px;
   padding: 14px;
   border-radius: 12px;
+}
+.b2:hover {
+  opacity: 0.85;
+}
+.b3 {
+  margin-top: 45px;
+  padding: 14px;
+  border-radius: 12px;
+}
+.b3:hover {
+  opacity: 0.85;
 }
 h2 {
   color: #777777;
@@ -179,7 +197,6 @@ li {
   border-radius: 20px;
   font-size: 12px;
   line-height: 20px;
-
   z-index: 1;
   font-family: "Inter";
   font-weight: 600;
