@@ -34,7 +34,7 @@ h3 {
   font-size: large;
 }
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   /*Set the background color to bisque */
   background-color: bisque;
   /*Set the font size to large */
