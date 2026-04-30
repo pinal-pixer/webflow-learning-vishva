@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Spice Garden</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="head">
+      <header class="header">
+        <img src="../assets/Logo.svg" alt="Logo" />
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="Menu.html">Menu</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu-icon"
+        >
+          <path
+            d="M2.25 6C2.25 5.586 2.586 5.25 3 5.25H21C21.414 5.25 21.75 5.586 21.75 6C21.75 6.414 21.414 6.75 21 6.75H3C2.586 6.75 2.25 6.414 2.25 6ZM21 11.25H3C2.586 11.25 2.25 11.586 2.25 12C2.25 12.414 2.586 12.75 3 12.75H21C21.414 12.75 21.75 12.414 21.75 12C21.75 11.586 21.414 11.25 21 11.25ZM21 17.25H3C2.586 17.25 2.25 17.586 2.25 18C2.25 18.414 2.586 18.75 3 18.75H21C21.414 18.75 21.75 18.414 21.75 18C21.75 17.586 21.414 17.25 21 17.25Z"
+            fill="white"
+          />
+        </svg>
+      </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+     <div class="menu-container-color">
+      <div class="menu-container">
+        <h1>Contact Us</h1>
+        <div class="p-container">
+          <p class="menu-text">
+            We'd love to hear from you! Reserve a table, send feedback, or just say hello.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+    
+        <form class="contact-form">
+          <!-- USER DETAILS -->
+          <fieldset>
+            <legend>Your Details</legend>
+
+            <label for="fullName">Full Name *</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="9876543210"
+              pattern="[0-9]{10}"
+            />
+          </fieldset>
+
+          <!-- MESSAGE -->
+          <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">— Select a topic —</option>
+              <option value="reservation">Reservation</option>
+              <option value="feedback">Feedback</option>
+              <option value="general">General Inquiry</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </fieldset>
+
+          <!-- BUTTONS -->
+          <div class="form-actions">
+            <button type="submit">Send Message</button>
+            <button type="reset" class="secondary">Clear Form</button>
+          </div>
+        </form>
+    </div>
+
+      <!-- BUSINESS INFO -->
+      <section class="info container">
+        <div class="hours">
+          <h2>Business Hours</h2>
+
+          <p><strong>Monday – Friday</strong></p>
+          <p>11:00 AM – 3:00 PM (Lunch)</p>
+          <p>6:00 PM – 11:00 PM (Dinner)</p>
+
+          <p><strong>Saturday & Sunday</strong></p>
+          <p>11:00 AM – 11:00 PM (All Day)</p>
+
+          <p><strong>Public Holidays</strong></p>
+          <p>12:00 PM – 10:00 PM</p>
+        </div>
+
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+
+          <p>
+            <strong>Address:</strong><br />
+            42 Masala Lane, Colaba, Mumbai 400001, Maharashtra, India
+          </p>
+
+          <p>
+            <strong>Phone:</strong><br />
+            +91 98765 43210
+          </p>
+
+          <p>
+            <strong>Email:</strong><br />
+            hello@thespicegarden.in
+          </p>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="map container">
+        <h2>Find Us</h2>
+
+        <iframe
+          src="https://www.google.com/maps?q=Mumbai&output=embed"
+          width="100%"
+          height="400"
+          style="border: 0"
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <div class="footer-container">
+      <div class="text-container">
+        <p class="p2">
+          The Spice Garden | 42 Masala Lane, Mumbai 400001 | +91 98765 43210
+        </p>
+        <div class="a-link-container">
+          <p class="p3">View Our Menu</p>
+          <a href="Contact_Form.html" class="a-link-container-a"
+            >Get In Touch</a
+          >
+        </div>
+        <p class="p4">© 2026 The Spice Garden. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
