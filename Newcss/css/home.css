@@ -41,6 +41,12 @@ body {
   padding: 16px 40px;
   align-items: center;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 16px 20px;
+  }
+  @media (max-width: 449px) {
+    padding: 12px 20px;
+  }
 }
 nav a {
   font-family: "Inter";
@@ -58,9 +64,19 @@ nav a {
     color: #de9f3a;
     text-decoration: underline;
   }
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+.menu-icon {
+  display: none;
+  @media (max-width: 460px) {
+    display: flex;
+  }
 }
 .hero-container {
   background-color: #7c3400;
+  margin-top: -1px;
 }
 .mcontent {
   max-width: 1440px;
@@ -69,6 +85,12 @@ nav a {
   align-items: center;
   padding: 100px 72px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 80px 20px;
+  }
+  @media (max-width: 449px) {
+    padding: 64px 20px;
+  }
 }
 .mtext {
   display: flex;
@@ -85,6 +107,14 @@ h1 {
   text-align: center;
   margin: 0px;
   padding: 0px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media (max-width: 449px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .p1 {
   max-width: 610px;
@@ -97,32 +127,251 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 0;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  @media (max-width: 449px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
-span {
+.main-span {
   font-weight: 700;
   font-family: "Helvetica Neue", sans-serif;
 }
 .hero-image {
   max-width: 800px;
+  width: 100%;
   margin: 40px 0px 0px 0px;
   padding: 0;
   border-radius: 12px;
+  object-fit: cover;
+}
+.main-container {
+  background-color: #fef7ee;
+  padding: 0 20px;
+}
+.box-container {
+  background-color: #fef7ee;
+  padding: 64px 0;
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 449px) {
+    padding: 40px 0;
+  }
 }
 
-.box-container{
-  background-color: #7c3400;
-   
+.why-dine-with-section-title {
+  font-family: "Georgia Pro";
+  color: #8b4612;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #d6a24e;
+  font-size: 32px;
+  line-height: 40px;
+  max-width: 1024px;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  @media (max-width: 449px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
+
+.card-name {
+  text-align: center;
+  color: #8b4612;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Georgia Pro";
+  font-weight: 700;
+  margin: 0;
+}
+.card-content {
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1024px;
+  margin: 24px auto 0;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto 0;
+  }
+  @media (max-width: 449px) {
+    grid-template-columns: 1fr;
+    margin: 16px auto 0;
+  }
+}
+.box {
+  background-color: white;
+  align-items: center;
+  border-radius: 12px;
+  padding: 40px 24px;
+  margin: 0;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.our-story-color {
+  background-color: #fef7ee;
+}
+.our-story-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 0;
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 449px) {
+    padding: 40px 0;
+  }
+}
+
+.our-story-title {
+  text-align: center;
+  color: #8b4612;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Georgia Pro";
+  font-weight: 700;
+  margin: 0;
+}
+.our-span {
+  color: #8b4612;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+}
+.blockquote-container {
+  background-color: #fef4e7;
+  padding: 24px 40px;
+  border-left: 3px solid #d6a24e;
+  gap: 10px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+blockquote {
+  margin: 0;
+}
+.story-text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+.span-chef {
+  font-weight: bold;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  gap: 16px;
+}
+.table-background {
+  background-color: #fef7ee;
+}
+.table-container {
+  padding: 64px 0;
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 449px) {
+    padding: 40px 0;
+  }
+}
+.menu-table-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 40px auto 0;
+}
+
+.menu-table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.header-row th {
+  background-color: #8b4612;
+  color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.menu-item {
+  background-color: #fdf5e6;
+  height: 40px;
+  color: #000000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #ebe1d5;
+  td {
+    padding: 12px 18px;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sub-menu-item {
+  background-color: #ffffff;
+}
+
 .footer-container {
   background-color: #7c3400;
 }
-
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 40px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 449px) {
+    margin-top: 16px;
+  }
+}
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0px 80px 0px;
+  padding: 40px 0px;
   gap: 16px;
+  padding: 64px 0;
+  @media (max-width: 768px) {
+    padding: 40px 20px 80px 20px;
+  }
+  @media (max-width: 449px) {
+    padding: 40px 20px 80px 20px;
+  }
 }
 
 .p2 {
@@ -130,7 +379,7 @@ span {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  margin:0;
+  margin: 0;
   color: #ffffff;
 }
 .a-link-container {
@@ -148,7 +397,8 @@ span {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  margin:0px 12px 0px 12px;
+  padding: 0px 12px;
+  border-left: 1px solid #808080;
 
   transition:
     color 0.3s ease,
@@ -165,7 +415,7 @@ span {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  margin:0px 12px 0px 0px;
+  margin: 0px 12px 0px 0px;
 }
 
 .p4 {
