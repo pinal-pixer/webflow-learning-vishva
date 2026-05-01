@@ -14,13 +14,13 @@
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px 72px;
+  padding: 40px 20px;
   gap: 16px;
-  @media (max-width: 768px) {
+  @media (min-width: 450px) {
     padding: 48px 20px;
   }
-  @media (max-width: 449px) {
-    padding: 40px 20px;
+  @media (min-width: 769px) {
+    padding: 64px 72px;
   }
 }
 .p-container {
@@ -34,28 +34,29 @@
 h1 {
   color: #8b4612;
   font-family: "Georgia Pro";
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 40px;
   margin: 0;
-  @media (max-width: 768px) {
+
+  @media (min-width: 450px) {
     font-size: 40px;
     line-height: 48px;
   }
-  @media (max-width: 449px) {
-    font-size: 32px;
-    line-height: 40px;
+  @media (min-width: 769px) {
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 .menu-text {
   color: #777777;
   margin: 0;
   font-family: "Helvetica Neue";
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
-  @media (max-width: 768px) {
-    font-size: 18px;
-    line-height: 26px;
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -63,37 +64,39 @@ h1 {
   background-color: #fef7ee;
 }
 .table-container {
-  padding: 64px 0 0;
-  @media (max-width: 768px) {
-    padding: 40px 0 0;
+  padding: 40px 0 0;
+  @media (min-width: 769px) {
+    padding: 64px 0 0;
   }
 }
 .menu-table-container {
   width: 100%;
   max-width: 1024px;
-  margin: 24px auto 0;
+
+  margin: 20px -20px 0;
+  padding: 0 20px;
   overflow-x: auto;
   scrollbar-width: none;
-  @media (max-width: 768px) {
-    margin: 20px -20px 0;
-    padding: 0 20px;
+  @media (min-width: 769px) {
+    margin: 24px auto 0;
   }
 }
 
 .table-title {
   font-family: "Georgia Pro";
   color: #8b4612;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   max-width: 1024px;
   margin: 0 auto;
-  @media (max-width: 768px) {
+
+  @media (min-width: 450px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @media (min-width: 769px) {
     font-size: 28px;
     line-height: 36px;
-  }
-  @media (max-width: 449px) {
-    font-size: 24px;
-    line-height: 32px;
   }
 }
 .menu-table {
@@ -110,11 +113,12 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  min-width: 150px;
   padding: 12px 18px;
   text-transform: uppercase;
   text-align: left;
-  @media (max-width: 768px) {
-    min-width: 150px;
+  @media (min-width: 769px) {
+    min-width: unset;
   }
   &:nth-child(2) {
     min-width: 258px;

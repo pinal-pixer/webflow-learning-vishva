@@ -78,10 +78,31 @@ nav a {
     display: none;
   }
 }
+.mobile-nav a {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease;
+  &:hover {
+    color: #de9f3a;
+    text-decoration: underline;
+  }
+}
 .menu-icon {
   display: none;
   @media (max-width: 460px) {
     display: flex;
+    background-color: unset;
+    border: none;
+    box-shadow: none;
   }
 }
 
@@ -164,4 +185,54 @@ nav a {
   text-align: center;
   color: #ffffff;
   margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #964000;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  padding: 20px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.close-btn {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+}
+
+.mobile-nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
 }
