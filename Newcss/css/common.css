@@ -47,6 +47,16 @@ body {
   @media (max-width: 449px) {
     padding: 12px 20px;
   }
+  img {
+    @media (max-width: 768px) {
+      width: 160px;
+      height: 32px;
+    }
+    @media (max-width: 449px) {
+      width: 120px;
+      height: 24px;
+    }
+  }
 }
 nav a {
   font-family: "Inter";
