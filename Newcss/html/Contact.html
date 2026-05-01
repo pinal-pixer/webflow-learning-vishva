@@ -5,9 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | The Spice Garden</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/contact.css" />
-     <script src="../js/common.js"></script>
+    <script src="../js/common.js"></script>
   </head>
 
   <body>
@@ -20,31 +24,60 @@
             <a href="home.html">Home</a>
             <a href="Menu.html">Menu</a>
             <a href="Contact.html">Contact</a>
+            <div class="notification-container">
+              <a href="menu.html"
+                ><img
+                  src="../assets/notification-bell-svgrepo-com (3).svg"
+                  alt="Notification"
+                  class="bell-icon"
+              /></a>
+              <button class="badged">1</button>
+            </div>
           </nav>
-         <button class="menu-icon-container menu-icon" onclick="toggleMenu()">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.25 6C2.25 5.586 2.586 5.25 3 5.25H21C21.414 5.25 21.75 5.586 21.75 6C21.75 6.414 21.414 6.75 21 6.75H3C2.586 6.75 2.25 6.414 2.25 6ZM21 11.25H3C2.586 11.25 2.25 11.586 2.25 12C2.25 12.414 2.586 12.75 3 12.75H21C21.414 12.75 21.75 12.414 21.75 12C21.75 11.586 21.414 11.25 21 11.25ZM21 17.25H3C2.586 17.25 2.25 17.586 2.25 18C2.25 18.414 2.586 18.75 3 18.75H21C21.414 18.75 21.75 18.414 21.75 18C21.75 17.586 21.414 17.25 21 17.25Z"
-              fill="white"
+          <button class="menu-icon-container menu-icon" onclick="toggleMenu()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.25 6C2.25 5.586 2.586 5.25 3 5.25H21C21.414 5.25 21.75 5.586 21.75 6C21.75 6.414 21.414 6.75 21 6.75H3C2.586 6.75 2.25 6.414 2.25 6ZM21 11.25H3C2.586 11.25 2.25 11.586 2.25 12C2.25 12.414 2.586 12.75 3 12.75H21C21.414 12.75 21.75 12.414 21.75 12C21.75 11.586 21.414 11.25 21 11.25ZM21 17.25H3C2.586 17.25 2.25 17.586 2.25 18C2.25 18.414 2.586 18.75 3 18.75H21C21.414 18.75 21.75 18.414 21.75 18C21.75 17.586 21.414 17.25 21 17.25Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <!-- responsive bell icon -->
+          <div class="responsive-bell-icon">
+            <img
+              src="../assets/notification-bell-svgrepo-com (3).svg"
+              alt="Notification"
+              class="bell-icon"
             />
-          </svg>
-        </button>
-        <div id="menuModal" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="toggleMenu()">&times;</span>
-            <nav class="mobile-nav">
-              <a href="home.html">Home</a>
-              <a href="Menu.html">Menu</a>
-              <a href="Contact.html">Contact</a>
-            </nav>
+            <button class="badged">1</button>
           </div>
-        </div>
+
+          <div id="menuModal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="toggleMenu()">&times;</span>
+              <nav class="mobile-nav">
+                <a href="home.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Contact.html">Contact</a>
+                <div class="notification-container">
+                  <a href="menu.html"
+                    ><img
+                      src="../assets/notification-bell-svgrepo-com (3).svg"
+                      alt="Notification"
+                      class="bell-icon"
+                  /></a>
+                  <button class="badged">1</button>
+                </div>
+              </nav>
+            </div>
+          </div>
         </header>
       </div>
 
@@ -130,6 +163,7 @@
             <div class="button-container">
               <button type="submit" class="submit-button">Send Message</button>
               <button type="reset" class="clear-button">Clear Form</button>
+              <div class="loader"></div>
             </div>
           </div>
         </div>
@@ -198,9 +232,7 @@
           </p>
           <div class="a-link-container">
             <p class="p3">View Our Menu</p>
-            <a href="Contact_Form.html" class="a-link-container-a"
-              >Get In Touch</a
-            >
+            <a href="Contact.html" class="a-link-container-a">Get In Touch</a>
           </div>
           <p class="p4">© 2026 The Spice Garden. All rights reserved.</p>
         </div>

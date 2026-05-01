@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | The Spice Garden</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <script src="../js/common.js"></script>
@@ -20,6 +20,15 @@
           <a href="home.html">Home</a>
           <a href="Menu.html">Menu</a>
           <a href="Contact.html">Contact</a>
+          <div class="notification-container">
+            <a href="menu.html"
+              ><img
+                src="../assets/notification-bell-svgrepo-com (3).svg"
+                alt="Notification"
+                class="bell-icon"
+            /></a>
+            <button class="badged">1</button>
+          </div>
         </nav>
         <button class="menu-icon-container menu-icon" onclick="toggleMenu()">
           <svg
@@ -35,6 +44,16 @@
             />
           </svg>
         </button>
+        <!-- responsive bell icon -->
+        <div class="responsive-bell-icon">
+          <img
+            src="../assets/notification-bell-svgrepo-com (3).svg"
+            alt="Notification"
+            class="bell-icon"
+          />
+          <button class="badged">1</button>
+        </div>
+
         <div id="menuModal" class="modal">
           <div class="modal-content">
             <span class="close-btn" onclick="toggleMenu()">&times;</span>
@@ -166,9 +185,7 @@
         </p>
         <div class="a-link-container">
           <p class="p3">View Our Menu</p>
-          <a href="Contact_Form.html" class="a-link-container-a"
-            >Get In Touch</a
-          >
+          <a href="Contact.html" class="a-link-container-a">Get In Touch</a>
         </div>
         <p class="p4">© 2026 The Spice Garden. All rights reserved.</p>
       </div>
