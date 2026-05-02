@@ -20,6 +20,16 @@
       <p class="title">
         Simple, transparent pricing. No hidden fees. Cancel anytime.
       </p>
+      <div class="toggle-container">
+        <button onclick="toggleDarkMode()">Toggle dark mode</button>
+      </div>
+
+      <script>
+        function toggleDarkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
     </div>
     <div class="container">
       <!-- BASIC CARD -->
@@ -149,7 +159,7 @@
             </li>
           </ul>
 
-          <button class="b1">Get Started</button>
+          <button class="common-button secondary-button">Get Started</button>
         </div>
       </div>
 
@@ -276,8 +286,9 @@
               Priority Support
             </li>
           </ul>
-
-          <button class="b2">Get Started</button>
+          <div class="pop-card-button">
+            <button class="common-button primary-button">Get Started</button>
+          </div>
         </div>
       </div>
 
@@ -404,8 +415,7 @@
               Priority Support 24/7
             </li>
           </ul>
-
-          <button class="b3">Contact Sales</button>
+          <button class="common-button primary-button">Contact Sales</button>
         </div>
       </div>
     </div>

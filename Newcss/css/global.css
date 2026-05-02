@@ -1,0 +1,67 @@
+:root {
+  --primary: #964000;
+  --secondary: #fdf5e6;
+  --dark-brown: #7c3400;
+  --black: #000000;
+  --white: #ffffff;
+  --mustedyellow: #de9f3a;
+  --cream: #fef7ee;
+  --brownlight: #8b4612;
+  --grey: #777777;
+  --yellowcream: #ffebc7;
+  --green: #2e7d32;
+  --red: #c0392b;
+  --yellow-grey: #e9dfd3;
+  --dark-grey: #333;
+  --brown-dark: #6b350f;
+  --light-brown: #e8ddd0;
+  --information: #fbf5ee;
+  --grey-cream-border: #ebe1d5;
+  --cream-block: #fef4e7;
+  --dark-grey-808080: #808080;
+
+  /* spacing variable */
+  --spacing-100: 100px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-64: 64px;
+  --spacing-40: 40px;
+  --spacing-24: 24px;
+  --spacing-20: 20px;
+  --spacing-18: 18px;
+  --spacing-16: 16px;
+  --spacing-14: 14px;
+  --spacing-12: 12px;
+  --spacing-10: 10px;
+  --spacing-0: 0;
+  
+  /* Font size variable */
+  --font-size-h1: 48px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-20: 20px;
+  --font-size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --font-size-10: 10px;
+
+  /* Font wight variable */
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+
+  /* Line height variable */
+  --line-height-h1: 56px;
+  --line-height-h2: 44px;
+  --line-height-48: 48px;
+  --line-height-40: 40px;
+  --line-height-28: 28px;
+  --line-height-26: 26px;
+  --line-height-24: 24px;
+  --line-height-20: 20px;
+  --line-height-18: 18px;
+  --line-height-16: 16px;
+}

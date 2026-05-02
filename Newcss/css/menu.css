@@ -1,26 +1,26 @@
 .menu-content {
-  background-color: #fef7ee;
-  padding: 0 20px;
+  background-color: var(--cream);
+  padding: var(--spacing-0) var(--spacing-20);
 }
 
 .menu-container-color {
-  background-color: #fdf5e6;
-  margin: 0;
-  padding: 0;
+  background-color: var(--secondary);
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
 }
 .menu-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  gap: 16px;
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-40) var(--spacing-20);
+  gap: var(--spacing-16);
   @media (min-width: 450px) {
-    padding: 48px 20px;
+    padding: var(--spacing-48) var(--spacing-20);
   }
   @media (min-width: 769px) {
-    padding: 64px 72px;
+    padding: var(--spacing-64) var(--spacing-72);
   }
 }
 .p-container {
@@ -29,74 +29,73 @@
   max-width: 610px;
   width: 100%;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-16);
 }
 h1 {
-  color: #8b4612;
+  color: var(--brownlight);
   font-family: "Georgia Pro";
-  font-size: 32px;
-  line-height: 40px;
-  margin: 0;
-
+  font-size: var(--font-size-32);
+  line-height: var(--line-height-40);
+  margin: var(--spacing-0);
   @media (min-width: 450px) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: var(--font-size-40);
+    line-height: var(--line-height-48);
   }
   @media (min-width: 769px) {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
   }
 }
 .menu-text {
-  color: #777777;
-  margin: 0;
+  color: var(--grey);
+  margin: var(--spacing-0);
   font-family: "Helvetica Neue";
-  font-size: 18px;
-  line-height: 26px;
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-26);
   text-align: center;
   @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-28);
   }
 }
 
 .table-background {
-  background-color: #fef7ee;
+  background-color: var(--cream);
 }
 .table-container {
-  padding: 40px 0 0;
+  padding: var(--spacing-40) var(--spacing-0) var(--spacing-0);
   @media (min-width: 769px) {
-    padding: 64px 0 0;
+    padding: var(--spacing-64) var(--spacing-0) var(--spacing-0);
   }
 }
 .menu-table-container {
   width: 100%;
   max-width: 1024px;
-  margin: 20px -20px 0;
-  padding: 0 20px;
+  margin: var(--spacing-20) -20px var(--spacing-0);
+  padding: var(--spacing-0) var(--spacing-20);
   overflow-x: auto;
   scrollbar-width: none;
   @media (min-width: 769px) {
-    margin: 24px auto 0;
-    padding: 0;
+    margin: var(--spacing-24) auto var(--spacing-0);
+    padding: var(--spacing-0);
   }
 }
 
 .table-title {
   font-family: "Georgia Pro";
-  color: #8b4612;
-  font-size: 24px;
-  line-height: 32px;
+  color: var(--brownlight);
+  font-size: var(--font-size-24=);
+  line-height: var(--line-height-32);
   max-width: 1024px;
-  margin: 0 auto;
+  margin: var(--spacing-0) auto;
 
   @media (min-width: 450px) {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: var(--font-size-32);
+    line-height: var(--line-height-40);
   }
   @media (min-width: 769px) {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: var(--font-size-28);
+    line-height: var(--line-height-36);
   }
 }
 .menu-table {
@@ -107,14 +106,14 @@ h1 {
   overflow: hidden;
 }
 .header-row th {
-  background-color: #8b4612;
-  color: #ffffff;
+  background-color: var(--brownlight);
+  color: var(--white);
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
   min-width: 150px;
-  padding: 12px 18px;
+  padding: var(--spacing-12) var(--spacing-18);
   text-transform: uppercase;
   text-align: left;
   @media (min-width: 769px) {
@@ -125,19 +124,19 @@ h1 {
   }
 }
 .menu-item {
-  background-color: #fdf5e6;
+  background-color: var(--secondary);
   height: 40px;
   color: #000000;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
   border-bottom: 1px solid #ebe1d5;
   transition: background-color 0.2s ease;
   &:hover {
-    background-color: #ffebc7;
+    background-color: var(--yellowcream);
   }
   td {
-    padding: 12px 18px;
+    padding: var(--spacing-12) var(--spacing-18);
   }
   &:last-child {
     border-bottom: none;
@@ -145,31 +144,31 @@ h1 {
 }
 
 .sub-menu-item {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .menu-type {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
 }
 
 .sub-menu-veg {
-  color: #2e7d32;
+  color: var(--green);
 }
 .sub-menu-non-veg {
-  color: #c0392b;
+  color: var(--red);
 }
 .menu-image-container {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 64px 0;
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-64) 0;
 }
 .menu-image {
   max-width: 700px;
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: var(--spacing-0) auto;
   display: block;
   border-radius: 5px;
   object-fit: cover;
@@ -182,9 +181,9 @@ h1 {
 .rupee {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #8b4612;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--brownlight);
 }
 .first-column {
   white-space: nowrap;

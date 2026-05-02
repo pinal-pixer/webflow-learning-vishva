@@ -113,30 +113,26 @@ h3 {
   height: 100%;
 }
 
-.b1 {
+.secondary-button {
   margin-top: 10px;
   padding: 14px;
   border-radius: 12px;
-  background-color: #ffffff;
-  color: #6c63ff;
+  background-color: transparent !important;
+  color: #6c63ff !important;
 }
-.b1:hover {
+.secondary-button:hover {
   opacity: 0.85;
 }
-.b2 {
+.pop-card-button{
   margin-top: 45px;
   padding: 14px;
   border-radius: 12px;
 }
-.b2:hover {
-  opacity: 0.85;
-}
-.b3 {
-  margin-top: 45px;
+.primary-button {
+  margin-top: 10px;
   padding: 14px;
-  border-radius: 12px;
 }
-.b3:hover {
+.primary-button:hover {
   opacity: 0.85;
 }
 h2 {
@@ -154,7 +150,7 @@ sub {
   font-weight: normal;
   line-height: 24px;
 }
-button {
+.common-button {
   background-color: #6c63ff;
   color: #ffffff;
   border: none;
@@ -200,4 +196,27 @@ li {
   z-index: 1;
   font-family: "Inter";
   font-weight: 600;
+}
+/* Add a "Dark Mode" toggle at the top that switches the :root variables to dark theme colors using JavaScript (a simple classList.toggle) */
+.dark-mode {
+  background-color: black;
+  color: white;
+  .card,
+  .card-sub {
+    background-color: #2c2b2b;
+    border: 2px solid #484646;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+  }
+  li {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.toggle-container {
+  margin-top: 20px;
+  button {
+    width: fit-content;
+  }
 }
