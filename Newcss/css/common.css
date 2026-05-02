@@ -25,27 +25,27 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
 }
 .head {
   background-color: var(--primary);
-  margin: 0;
-  padding: 0;
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
 }
 .header {
   display: flex;
   justify-content: space-between;
   background-color: var(--primary);
   max-width: 1440px;
-  padding: 16px 40px;
+  padding: var(--spacing-16) var(--spacing-40);
   align-items: center;
-  margin: 0 auto;
+  margin: var(--spacing-0) auto;
   @media (max-width: 768px) {
-    padding: 16px 20px;
+    padding: var(--spacing-16) var(--spacing-20);
   }
   @media (max-width: 449px) {
-    padding: 12px 20px;
+    padding: var(--spacing-12) var(--spacing-20);
   }
   img {
     @media (max-width: 768px) {
@@ -64,11 +64,11 @@ nav {
 }
 nav a {
   font-family: "Inter";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
   text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--spacing-10);
+  margin-right: var(--spacing-10);
   color: var(--white);
   text-decoration: none;
   transition:
@@ -84,11 +84,11 @@ nav a {
 }
 .mobile-nav a {
   font-family: "Inter";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
   text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--spacing-10);
+  margin-right: var(--spacing-10);
   color: var(--white);
   text-decoration: none;
   display: flex;
@@ -125,9 +125,9 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8px;
-  margin: 0;
-  padding: 1px 4px;
+  font-size: var(--font-size-8);
+  margin: var(--spacing-0);
+  padding: var(--spacing-1) var(--spacing-4);
   position: absolute;
   border-radius: 50%;
   border: none;
@@ -180,36 +180,36 @@ nav a {
 .main-text-container {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  gap: 40px;
+  margin-top: var(--spacing-24);
+  gap: var(--spacing-40);
   @media (max-width: 768px) {
-    margin-top: 20px;
+    margin-top: var(--spacing-20);
   }
   @media (max-width: 449px) {
-    margin-top: 16px;
+    margin-top: var(--spacing-16);
   }
 }
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0px;
-  gap: 16px;
-  padding: 64px 0;
+  padding: var(--spacing-40) var(--spacing-0);
+  gap: var(--spacing-16);
+  padding: var(--spacing-64) var(--spacing-0);
   @media (max-width: 768px) {
-    padding: 40px 20px 80px 20px;
+    padding: var(--spacing-40) var(--spacing-20) var(--spacing-80);
   }
   @media (max-width: 449px) {
-    padding: 40px 20px 80px 20px;
+    padding: var(--spacing-40) var(--spacing-20) var(--spacing-80);
   }
 }
 
 .p2 {
   font-family: "Georgia Pro";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
   text-align: center;
-  margin: 0;
+  margin: var(--spacing-0);
   color: var(--white);
 }
 .a-link-container {
@@ -217,7 +217,7 @@ nav a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: var(--spacing-0);
 }
 
 .a-link-container-a {
@@ -225,9 +225,9 @@ nav a {
   color: var(--mustedyellow);
   text-decoration: none;
   text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 0px 12px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-20);
+  padding: var(--spacing-0) var(--spacing-12);
   border-left: 1px solid var(--dark-grey-808080);
 
   transition:
@@ -241,18 +241,18 @@ nav a {
 
 .p3 {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-20);
   text-align: center;
   color: var(--white);
-  margin: 0px 12px 0px 0px;
+  margin: var(--spacing-0) var(--spacing-12) var(--spacing-0);
 }
 
 .p4 {
   font-family: "Georgia Pro";
   text-align: center;
   color: var(--white);
-  margin: 0;
+  margin: var(--spacing-0);
 }
 
 .modal {
@@ -271,7 +271,7 @@ nav a {
   width: 80%;
   max-width: 300px;
   height: 100%;
-  padding: 20px;
+  padding: var(--spacing-20);
   animation: slideIn 0.3s ease;
 }
 
@@ -285,7 +285,7 @@ nav a {
 }
 
 .close-btn {
-  font-size: 28px;
+  font-size: var(--font-size-28);
   color: var(--white);
   cursor: pointer;
   display: block;
@@ -293,7 +293,7 @@ nav a {
 }
 
 .mobile-nav {
-  margin-top: 20px;
+  margin-top: var(--spacing-20);
   display: flex;
   flex-direction: column;
 }
@@ -301,6 +301,6 @@ nav a {
 .mobile-nav a {
   color: var(--white);
   text-decoration: none;
-  padding: 10px 0;
-  font-size: 18px;
+  padding: var(--spacing-10) var(--spacing-0);
+  font-size: var(--font-size-18);
 }

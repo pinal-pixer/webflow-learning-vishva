@@ -26,6 +26,7 @@
   --spacing-80: 80px;
   --spacing-64: 64px;
   --spacing-40: 40px;
+  --spacing-32: 32px;
   --spacing-24: 24px;
   --spacing-20: 20px;
   --spacing-18: 18px;
@@ -33,9 +34,13 @@
   --spacing-14: 14px;
   --spacing-12: 12px;
   --spacing-10: 10px;
+  --spacing-8: 8px;
+  --spacing-4: 4px;
+  --spacing-1: 1px;
   --spacing-0: 0;
-  
+
   /* Font size variable */
+  --font-size-big: 56px;
   --font-size-h1: 48px;
   --font-size-40: 40px;
   --font-size-32: 32px;
@@ -47,6 +52,7 @@
   --font-size-10: 10px;
 
   /* Font wight variable */
+  --font-weight-800: 800;
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;
@@ -54,6 +60,7 @@
   --font-weight-300: 300;
 
   /* Line height variable */
+  --line-height-big: 64px;
   --line-height-h1: 56px;
   --line-height-h2: 44px;
   --line-height-48: 48px;
